@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouStream - Your Video Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="left">
+            <span class="menu-icon">&#9776;</span>
+            <div class="logo">
+                <svg width="90" height="20" viewBox="0 0 90 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="90" height="20" rx="4" fill="url(#gradient)"/>
+                    <text x="45" y="14" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="12">YouStream</text>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="center">
+            <input type="text" placeholder="Search videos, channels, playlists..." autocomplete="off">
+            <button class="search-btn" title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+            </button>
+
+            <button class="mic-btn" title="Search with your voice">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
+                    <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="right">
+            <button class="create-btn" title="Create content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                    <path d="M616-242q-27 1-51.5 1.5t-43.5.5h-41q-71 0-133-2-53-2-104.5-5.5T168-257q-26-7-45-26t-26-45q-6-23-9.5-56T82-447q-2-36-2-73t2-73q2-30 5.5-63t9.5-56q7-26 26-45t45-26q23-6 74.5-9.5T347-798q62-2 133-2t133 2q53 2 104.5 5.5T792-783q26 7 45 26t26 45q6 23 9.5 56t5.5 63q2 36 2 73v17q-19-8-39-12.5t-41-4.5q-83 0-141.5 58.5T600-320q0 21 4 40.5t12 37.5ZM400-400l208-120-208-120v240Zm360 200v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z" />
+                </svg>
+            </button>
+
+            <button class="notification-btn" title="Notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-1.29 1.29c-.63.63-.19 1.71.7 1.71h13.17c.89 0 1.34-1.08.71-1.71L18 16z" />
+                </svg>
+            </button>
+
+            <button class="profile-btn" title="Your account">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="currentColor">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <ul>
+            <li class="active">🏠 Home</li>
+            <li>🔥 Trending</li>
+            <li>📽️ Subscriptions</li>
+            <hr>
+            <li>📚 Library</li>
+            <li>📹 History</li>
+            <li>📂 Your videos</li>
+            <li>⏰ Watch later</li>
+            <li>👍 Liked videos</li>
+            <li>📋 Playlists</li>
+            <hr>
+            <h4>Subscriptions</h4>
+            <li>🎓 Code Academy</li>
+            <li>🧑‍💻 Tech Tutorials</li>
+            <li>🏫 Learning Hub</li>
+            <li>🎨 Creative Studio</li>
+            <li>🎵 Music Zone</li>
+            <hr>
+            <h4>Explore</h4>
+            <li>🎮 Gaming</li>
+            <li>🎬 Movies</li>
+            <li>📺 Live</li>
+            <li>🏃‍♂️ Sports</li>
+            <li>📰 News</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="greeting">Welcome back, Creator! 🎬</div>
+
+        <div class="filters">
+            <button class="active">All</button>
+            <button>Programming</button>
+            <button>Web Development</button>
+            <button>JavaScript</button>
+            <button>Python</button>
+            <button>React</button>
+            <button>CSS</button>
+            <button>Tutorials</button>
+            <button>Live Coding</button>
+            <button>Tech Reviews</button>
+            <button>Design</button>
+            <button>New to you</button>
+        </div>
+
+        <div class="video-grid">
+
+            <a class="video-card" href="https://www.youtube.com/watch?v=ntLJmHOJ0ME" target="_blank">
+                <img src="https://i.ytimg.com/vi/ntLJmHOJ0ME/hq720.jpg" alt="Java Full Course - Complete Tutorial">
+                <h4>Complete Java Programming Course - From Beginner to Advanced</h4>
+                <p>Code Academy • 12.5M views • 8 months ago</p>
+            </a>
+
+            <a class="video-card" href="https://www.youtube.com/watch?v=gfDE2a7MKjA" target="_blank">
+                <img src="https://i.ytimg.com/vi/gfDE2a7MKjA/hq720.jpg" alt="Python Masterclass Tutorial">
+                <h4>Python Programming Masterclass - Complete Guide 2024</h4>
+                <p>Tech Tutorials • 25M views • 1 year ago</p>
+            </a>
+
+            <a class="video-card" href="https://www.youtube.com/watch?v=HcOc7P5BMi4" target="_blank">
+                <img src="https://i.ytimg.com/vi/HcOc7P5BMi4/hq720.jpg" alt="Modern HTML & CSS Course">
+                <h4>Modern HTML & CSS - Build Responsive Websites</h4>
+                <p>Learning Hub • 8.2M views • 10 months ago</p>
+            </a>
+
+            <a class="video-card" href="https://www.youtube.com/watch?v=bjZvtN0QhZ8" target="_blank">
+                <img src="https://i.ytimg.com/vi/bjZvtN0QhZ8/mqdefault.jpg" alt="Future of Web Development">
+                <h4>The Future of Web Development - Trends & Technologies 2024</h4>
+                <p>Creative Studio • 450K views • 3 months ago</p>
+            </a>
+
+            <a class="video-card" href="https://www.youtube.com/watch?v=ZxKM3DCV2kE" target="_blank">
+                <img src="https://i.ytimg.com/vi/ZxKM3DCV2kE/hq720.jpg" alt="Portfolio Website Tutorial">
+                <h4>Build a Stunning Portfolio Website - HTML, CSS & JavaScript</h4>
+                <p>Tech Tutorials • 4.8M views • 6 months ago</p>
+            </a>
+
+            <a class="video-card" href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" target="_blank">
+                <img src="https://i.ytimg.com/vi/1Rs2ND1ryYc/hq720.jpg" alt="React E-Learning Platform">
+                <h4>Build a Complete E-Learning Platform with React & Node.js</h4>
+                <p>Code Academy • 2.1M views • 4 months ago</p>
+            </a>
+
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchBtn = document.querySelector('.search-btn');
+            const searchInput = document.querySelector('.center input');
+            
+            searchBtn.addEventListener('click', function() {
+                this.classList.add('loading');
+                setTimeout(() => {
+                    this.classList.remove('loading');
+                }, 1500);
+            });
+            
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchBtn.click();
+                }
+            });
+            
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                        background: rgba(255, 255, 255, 0.3);
+                        border-radius: 50%;
+                        transform: scale(0);
+                        animation: ripple 0.6s linear;
+                        pointer-events: none;
+                    `;
+                    
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+        
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
+</body>
+
+</html>
+
